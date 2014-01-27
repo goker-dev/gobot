@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>GOBOT: Monte Carlo Localization Simulation</title>
+        <meta name="description" content="GOBOT: Monte Carlo Localization Simulation" />
+        <meta name="author" content="goker" />
+        <link rel="shortcut icon" href="https://gokercebeci.com/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link href='//fonts.googleapis.com/css?family=Montserrat+Alternates|Raleway|Courgette' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="css/default.css" />
+    </head>
+    <body>
+        <header>
+            <h1>GOBOT: Monte Carlo Localization Simulation <i>(with HTML5 - Canvas and JavaScript)</i></h1>
+            <nav></nav>
+        </header>
+        <div id="container">
+            <div id="content">
+                <div id="board"></div>
+                <div id="controls">
+                    <table>
+                        <tr>
+                            <td colspan="2"><h2>Control Panel</h2></td>
+                        </tr>
+                        <tr>
+                            <td>Robot</td>
+                            <td class="left">
+                                <label>X:<input type="text" name="robot[x]" value="90"/></label>
+                                <label>Y:<input type="text" name="robot[y]" value="90"/></label>
+                                <label>A:<input type="text" name="robot[angle]" value="0"/></label>
+                                <label>S:<input type="text" name="robot[speed]" value="5"/></label>
+                                <label>N:<input type="text" name="robot[noise]" value=".5"/></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sensors</td>
+                            <td class="left">
+                                <label>1:<input type="checkbox" name="sensor[1][add]" value="1"/></label>
+                                <label>Max. Range:<input type="text" name="sensor[1][range]" value="300"/></label>
+                                <label>Angle:<input type="text" name="sensor[1][angle]" value="0"/></label>
+                                <label>Noise:<input type="text" name="sensor[1][noise]" value=".5"/></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="left">
+                                <label>2:<input type="checkbox" name="sensor[2][add]" value="1" checked="checked" /></label>
+                                <label>Max. Range:<input type="text" name="sensor[2][range]" value="300"/></label>
+                                <label>Angle:<input type="text" name="sensor[2][angle]" value="45"/></label>
+                                <label>Noise:<input type="text" name="sensor[2][noise]" value=".5"/></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="left">
+                                <label>3:<input type="checkbox" name="sensor[3][add]" value="1" checked="checked" /></label>
+                                <label>Max. Range:<input type="text" name="sensor[3][range]" value="300"/></label>
+                                <label>Angle:<input type="text" name="sensor[3][angle]" value="-45"/></label>
+                                <label>Noise:<input type="text" name="sensor[3][noise]" value=".5"/></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Map</td>
+                            <td class="left">
+                                <label>Map 1:<input type="radio" name="map" value="1"/></label>
+                                <label>Map 2:<input type="radio" name="map" value="2"  checked="checked"/></label>
+                                <label>Map 3:<input type="radio" name="map" value="3"/></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="left">
+                                Size: 640x360 <i>(static)</i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Particles</td>
+                            <td class="left">
+                                <label>Count:<input type="text" name="particles[count]" value="400"/></label>
+                                <label>Resample Percent:<input type="text" name="particles[percent]" value="10"/>%</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="center">
+                                <div id="generate">< Generate</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Robot</td>
+                            <td class="left">
+                                <label>X:<input type="text" name="kidnap[x]" value="300"/></label>
+                                <label>Y:<input type="text" name="kidnap[y]" value="300"/></label>
+                                <label>Angle:<input type="text" name="kidnap[angle]" value="60"/></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="center">
+                                <div id="kidnap">Kidnap</div>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            
+            <div id="display">
+                <div id="visualization1" class="chart"></div>
+                <div id="visualization2" class="chart"></div>
+                <textarea id="log"></textarea>
+            </div>
+        </div>
+        <footer>
+            <a href="https://gokercebeci.com/blog/gobot-mcl">gobot:mcl v1.0.0</a>
+            <p id="developer"> 
+                <a href="https://twitter.com/gokercebeci">feedback</a><span>|</span>
+                developed by <a href="https://gokercebeci.com?feature=gobot:mcl" title="goker"> goker</a>
+            </p>
+        </footer>
+        <script src="//www.google.com/jsapi"></script>
+        <script src="js/jquery-2.0.3.min.js"></script>
+        <script src="js/usefull.js"></script>
+        <script src="js/gobot.js"></script>
+    </body>
+</html>
+
