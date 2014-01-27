@@ -12,19 +12,9 @@ I developed this as my homework for **Probabilistic Robotic** course of M.Sc.
 Programme in Computer Engineering in Yildiz Technical University. http://www.bologna.yildiz.edu.tr/index.php?r=course/view&id=6900&aid=3
 
 
-References
-----------
-
-[Artificial Intelligence for Robotics, UDACITY ](https://www.udacity.com/course/cs373)
-[Monte Carlo method, Wikipedia](http://en.wikipedia.org/wiki/Monte_Carlo_method)
-[Monte Carlo localization, Wikipedia ](http://en.wikipedia.org/wiki/Monte_Carlo_localization)
-[Recursive Bayesian estimation, Wikipedia ](http://en.wikipedia.org/wiki/Recursive_Bayesian_estimation)
-[Normal distribution, Wikipedia ](http://en.wikipedia.org/wiki/Normal_distribution)
-[Box–Muller transform, Wikipedia ](http://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform)
-[JavaScript, Mozilla Developer Network ](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[HTML - Canvas, Mozilla Developer Network ](https://developer.mozilla.org/en/docs/HTML/Canvas)
-[Google Charts, Google Developers](https://developers.google.com/chart/)
-
+Demo
+----
+https://gokercebeci.com/demos/gobot/ *Please, use Google Chrome*
 
 Usage
 -----
@@ -37,6 +27,18 @@ of possible locations after each measurement.
 in operation is carried to an arbitrary location. 
 http://en.wikipedia.org/wiki/Kidnapped_robot_problem
 
+References
+----------
+
+[Artificial Intelligence for Robotics, UDACITY ](https://www.udacity.com/course/cs373)
+[Monte Carlo method, Wikipedia](http://en.wikipedia.org/wiki/Monte_Carlo_method)
+[Monte Carlo localization, Wikipedia ](http://en.wikipedia.org/wiki/Monte_Carlo_localization)
+[Recursive Bayesian estimation, Wikipedia ](http://en.wikipedia.org/wiki/Recursive_Bayesian_estimation)
+[Normal distribution, Wikipedia ](http://en.wikipedia.org/wiki/Normal_distribution)
+[Box–Muller transform, Wikipedia ](http://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform)
+[JavaScript, Mozilla Developer Network ](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[HTML - Canvas, Mozilla Developer Network ](https://developer.mozilla.org/en/docs/HTML/Canvas)
+[Google Charts, Google Developers](https://developers.google.com/chart/)
 
 License
 -------
